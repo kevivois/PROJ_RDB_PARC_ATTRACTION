@@ -5,6 +5,7 @@ RollerCoasterWorld est un parc d'attractions qui propose une large gamme d'attra
 
 
 # Particularités 
+Nous avons un seul shop dans notre parc, ce qui représente une relation unique, tandis que pour les autres éléments, nous avons plusieurs instances. Il y a également une dépendance circulaire qu'il faudra analyser.
 
 
 
