@@ -3,8 +3,14 @@
 ## Description
 RollerCoasterWorld est un parc d'attractions qui propose une large gamme d'attractions. Non loin de ces dernières, se trouve ShopWorld, un magasin où les visiteurs peuvent acheter divers produits et souvenirs. Différents types de billets sont disponibles à la vente, chacun permettant l'accès à plusieurs attractions du parc. Les employés du parc exercent leurs fonctions soit dans les attractions, soit dans le magasin, en fonction de leur affectation. Enfin, les visiteurs ont la possibilité de laisser des commentaires (feedbacks) sur les attractions qu'ils ont vécues, contribuant ainsi à enrichir l'expérience pour tous.
 
+## Métriques
 
-# Particularités 
+Notre parc d'attractions se composera d'une vingtaine d'attractions (comparativement Europapark en est composé de 59).
+Plusieurs offres tarifaires permettrons d'accéder à certaines attractions.
+Par attractions, nous considérons qu'il est vraisemblable d'avoir 10 employé.es par attractions pour ce qui est accueil, gestion des visiteurs ou encore entretien.
+
+
+## Particularités 
 Nous avons un seul shop dans notre parc, ce qui représente une relation unique, tandis que pour les autres éléments, nous avons plusieurs instances. Il y a également une dépendance circulaire qu'il faudra analyser.
 
 
