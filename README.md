@@ -1,6 +1,9 @@
 # Micro-projet RDB
+
 ## RollerCoasterWorld ! 
+
 ## Description
+
 RollerCoasterWorld est un parc d'attractions qui propose une large gamme d'attractions. Non loin de ces dernières, se trouve ShopWorld, un magasin où les visiteurs peuvent acheter divers produits et souvenirs. Différents types de billets sont disponibles à la vente, chacun permettant l'accès à plusieurs attractions du parc. Les employés du parc exercent leurs fonctions soit dans les attractions, soit dans le magasin, en fonction de leur affectation. Enfin, les visiteurs ont la possibilité de laisser des commentaires (feedbacks) sur les attractions qu'ils ont vécues, contribuant ainsi à enrichir l'expérience pour tous.
 
 ## Métriques
@@ -9,22 +12,21 @@ Notre parc d'attractions se composera d'une vingtaine d'attractions (comparative
 Plusieurs offres tarifaires permettrons d'accéder à certaines attractions.
 Par attractions, nous considérons qu'il est vraisemblable d'avoir 10 employé.es par attractions pour ce qui est accueil, gestion des visiteurs ou encore entretien.
 
-
 ## Particularités 
-Nous avons un seul shop dans notre parc, ce qui représente une relation unique, tandis que pour les autres éléments, nous avons plusieurs instances. Il y a également une dépendance circulaire qu'il faudra analyser.
 
+Nous avons fait le choix de n'avoir qu'un seul shop dans notre parc pour différencier les relations entre les tables. Pour avoir encore de la diversité, nous avons décidé d'introduire un système de ticket qui permet d'accéder à certaines attractions ou pas, ce qui offrira un panel de question intéressante. 
 
+## Challenge(s)
 
-Notre thème principal sera un parc d'attraction qui contiendra entre autre: 
-- Une gestion des types de billets (différentes classes tarifaires)
-- Une gestion du personnel en fonction du secteur dans lequel il est attribué (si il travail dans un shop ou une attraction par exemple)
-- La possibilité pour un client de laisser un feedback sur une attraction
-- Des contraintes sur les attractions (ici nous faisons le choix de l'âge)
+Dans notre structure, nous nous sommes retrouver avec des relations qui forment un cercle. Il faudra bien comprendre ce que cela signifie et justifier pourquoi ce comportement est présent.
 
-Dans ce genre de projet, il nous est possible d'étendre le nombre de nos tables où seul notre imagination est notre limite. Le plus important est, selon nous, de varier le contenu. 
-Ainsi, nous retrouvons dans notre schéma des relations plusieurs à plusieurs ou un vers plusieurs.
+## Choix de modélisation
 
-TODO : Dépendance circulaire 
+Dans notre projet, nous aurons naturellement des attractions qui forment la base d'un parc mais nous n'avons pas introduit tous les éléments distinctifs d'un parc d'attraction comme des restaurants et/ou des cafés, nous considérons que ce serait répétitif vis-à-vis des du shop que nous avons déjà (le fonctionnement serait sensiblement le mênme). Ensuite, nous ne modéliserons pas l'aspect file d'attente d'une attraction, nous resterons sur des données statiques. 
+
+## Données
+
+Notre projet est totalement fictif même si de l'inspiration de parc d'attraction pour les éléments de nos tables n'est pas exclue. Néanmoins, nous n'aurons aucune donnée sur lesquelles travailler.
 
 Questions intéressantes : 
 - Quelles attractions puis-je faire selon un age et un billet ?
