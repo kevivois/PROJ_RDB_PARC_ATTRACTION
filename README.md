@@ -24,6 +24,9 @@ Dans notre structure, nous nous sommes retrouver avec des relations qui forment 
 
 Dans notre projet, nous aurons naturellement des attractions qui forment la base d'un parc mais nous n'avons pas introduit tous les éléments distinctifs d'un parc d'attraction comme des restaurants et/ou des cafés, nous considérons que ce serait répétitif vis-à-vis des du shop que nous avons déjà (le fonctionnement serait sensiblement le mênme). Ensuite, nous ne modéliserons pas l'aspect file d'attente d'une attraction, nous resterons sur des données statiques. 
 
+## Forme
+Notre base de donnée est en format 3DNF, car les colonnes ne contiennent seulement des valeurs atomiques et qu'aucun groupes répétitifs n'existent. De plus, nos attributs décrivent toujours l'objet représenté par la relation. Finallement aucune dépendances fonctionnelles n'existent. 
+
 ## Données
 
 Notre projet est totalement fictif même si de l'inspiration de parc d'attraction pour les éléments de nos tables n'est pas exclue. Néanmoins, nous n'aurons aucune donnée sur lesquelles se baser, elles seront totalement fictives.
