@@ -14,7 +14,7 @@ Par attractions, nous considérons qu'il est vraisemblable d'avoir 10 employé.e
 
 ## Particularités 
 
-Nous avons fait le choix de n'avoir qu'un seul shop dans notre parc pour varier les relations entre les tables, ainsi nous avons des relations de plusieurs à plusieurs (comme les employés qui peuvent travailler dans plusieurs attractions et les attractions qui sont dirigées par plusieurs employés) et avec notre shop nous avons une relation de un vers plusieurs dans le sens que plusieurs clients peuvent aller dans ce shop. Pour avoir encore de la diversité, nous avons décidé d'introduire un système de ticket qui permet d'accéder à certaines attractions ou pas, ce qui offrira un panel de questions intéressantes. 
+Nous avons fait le choix de n'avoir qu'un seul shop dans notre parc de ce fait, nous n'aurons pas de table shop à proprement parler mais une table qui liera un produit, un client et un employé pour avoir une liste de qui achète quoi à qui avec encore d'autres colonnes comme quand, à quel prix et quelle quantité. Ainsi nous avons des relations de plusieurs à plusieurs (comme les employés qui peuvent travailler dans plusieurs attractions et les attractions qui sont dirigées par plusieurs employés) et des relations . Pour avoir encore de la diversité, nous avons décidé d'introduire un système de ticket qui permet d'accéder à certaines attractions ou pas, ce qui offrira un panel de questions intéressantes. 
 
 ## Challenge(s)
 
@@ -36,9 +36,10 @@ Questions intéressantes :
 - Quelles visiteurs ont achetés aux moins 2 objets.
 - Quelle est le produit le plus vendu ?
 - Quelle employé a vendu un 'objet' à 'client' ?
+
+Voici de potentiels index intéressant :
+- Index lié à l'évaluation (rating)
 - 
-
-
 
 Notre groupe est composé de :
 
