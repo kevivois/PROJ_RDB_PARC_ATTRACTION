@@ -80,7 +80,7 @@ CREATE TABLE visitors_rollerCoasters (
     id SERIAL PRIMARY KEY,
     rollerCoaster_id INT NOT NULL,
     ticket_id INT NOT NULL,
-    date date not null
+    date date NOT NULL,
     CONSTRAINT fk_visitors_rollerCoasters_rollerCoaster FOREIGN KEY (rollerCoaster_id) REFERENCES rollerCoasters (id),
     CONSTRAINT fk_visitors_rollerCoasters_ticket FOREIGN KEY (ticket_id) REFERENCES ticketTypes (id)
 );
