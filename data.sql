@@ -146,7 +146,7 @@ INSERT INTO sales_visitors (date, quantity, product_id, visitor_id, employee_id)
 ('2024-12-20', 2, 20, 20, 11);
 
 -- Insert data into visitors_tickets
-INSERT INTO visitors_tickets (visitor_id, ticket_id, date) VALUES 
+INSERT INTO visitors_rollerCoasters (rollerCoaster_id, ticket_id, date) VALUES 
 (1, 1, '2024-12-01'),
 (2, 2, '2024-12-02'),
 (3, 3, '2024-12-03'),
@@ -169,7 +169,7 @@ INSERT INTO visitors_tickets (visitor_id, ticket_id, date) VALUES
 (20, 5, '2024-12-20');
 
 -- Insert data into visitors_rollerCoasters
-INSERT INTO visitors_rollerCoasters (rollerCoaster_id, ticket_id) VALUES 
+INSERT INTO visitors_rollerCoasters (rollerCoaster_id, ticket_id, date) VALUES 
 (1, 1),
 (2, 2),
 (3, 3),
