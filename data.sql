@@ -168,29 +168,6 @@ INSERT INTO visitors_rollerCoasters (rollerCoaster_id, ticket_id, date) VALUES
 (19, 4, '2024-12-19'),
 (20, 5, '2024-12-20');
 
--- Insert data into visitors_rollerCoasters
-INSERT INTO visitors_rollerCoasters (rollerCoaster_id, ticket_id, date) VALUES 
-(1, 1),
-(2, 2),
-(3, 3),
-(4, 4),
-(5, 5),
-(6, 1),
-(7, 2),
-(8, 3),
-(9, 4),
-(10, 5),
-(11, 1),
-(12, 2),
-(13, 3),
-(14, 4),
-(15, 5),
-(16, 1),
-(17, 2),
-(18, 3),
-(19, 4),
-(20, 5);
-
 -- Insert data into feedbacks
 INSERT INTO feedbacks (rollerCoaster_id, visitor_id, date, comment, rating) VALUES 
 (1, 1, '2024-12-01', 'Absolutely thrilling!', 5),
