@@ -14,7 +14,7 @@ Par attractions, nous considérons qu'il est vraisemblable d'avoir 10 employé.e
 
 ## Particularités 
 
-Nous avons fait le choix de n'avoir qu'un seul shop dans notre parc pour différencier les relations entre les tables. Pour avoir encore de la diversité, nous avons décidé d'introduire un système de ticket qui permet d'accéder à certaines attractions ou pas, ce qui offrira un panel de question intéressante. 
+Nous avons fait le choix de n'avoir qu'un seul shop dans notre parc pour varier les relations entre les tables, ainsi nous avons des relations de plusieurs à plusieurs (comme les employés qui peuvent travailler dans plusieurs attractions et les attractions qui sont dirigées par plusieurs employés) et avec notre shop nous avons une relation de un vers plusieurs dans le sens que plusieurs client peuvent aller dans ce shop. Pour avoir encore de la diversité, nous avons décidé d'introduire un système de ticket qui permet d'accéder à certaines attractions ou pas, ce qui offrira un panel de question intéressante. 
 
 ## Challenge(s)
 
@@ -26,7 +26,7 @@ Dans notre projet, nous aurons naturellement des attractions qui forment la base
 
 ## Données
 
-Notre projet est totalement fictif même si de l'inspiration de parc d'attraction pour les éléments de nos tables n'est pas exclue. Néanmoins, nous n'aurons aucune donnée sur lesquelles travailler.
+Notre projet est totalement fictif même si de l'inspiration de parc d'attraction pour les éléments de nos tables n'est pas exclue. Néanmoins, nous n'aurons aucune donnée sur lesquelles se baser, elles seront totalement fictives.
 
 Questions intéressantes : 
 - Quelles attractions puis-je faire selon un age et un billet ?
