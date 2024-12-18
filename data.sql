@@ -124,6 +124,7 @@ INSERT INTO products (product_name, price, quantity) VALUES
 -- Insert data into sales_visitors
 INSERT INTO sales_visitors (date, quantity, product_id, visitor_id, employee_id) VALUES 
 ('2024-12-01', 1, 1, 1, 12),
+('2024-12-01', 1, 2, 1, 12),
 ('2024-12-02', 2, 2, 2, 5),
 ('2024-12-03', 1, 3, 3, 15),
 ('2024-12-04', 1, 4, 4, 7),
