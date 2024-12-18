@@ -1,3 +1,25 @@
+CREATE TABLE roles (
+    id SERIAL PRIMARY KEY,
+    role VARCHAR NOT NULL
+);
+
+CREATE TABLE ticketTypes (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR NOT NULL,
+    price DECIMAL NOT NULL CHECK (price > 0)
+);
+
+CREATE TABLE rollerCoasters (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR NOT NULL,
+    opening TIME NOT NULL,
+    closing TIME NOT NULL,
+    minimum_age INT NOT NULL CHECK (minimum_age > 0),
+    ticket_required_id INT NOT NULL,
+    CONSTRAINT chk_opening_closing CHECK (opening < closing),
+    CONSTRAINT fk_rollerCoasters_ticketType FOREIGN KEY (ticket_required_id) REFERENCES ticketTypes (id)
+);
+
 CREATE TABLE visitors (
     id SERIAL PRIMARY KEY,
     firstname VARCHAR NOT NULL,
@@ -39,28 +61,6 @@ CREATE TABLE employees (
     lastname VARCHAR NOT NULL,
     salary DECIMAL NOT NULL CHECK (salary > 0),
     CONSTRAINT fk_employees_role FOREIGN KEY (role_id) REFERENCES roles (id)
-);
-
-CREATE TABLE roles (
-    id SERIAL PRIMARY KEY,
-    role VARCHAR NOT NULL
-);
-
-CREATE TABLE ticketTypes (
-    id SERIAL PRIMARY KEY,
-    name VARCHAR NOT NULL,
-    price DECIMAL NOT NULL CHECK (price > 0)
-);
-
-CREATE TABLE rollerCoasters (
-    id SERIAL PRIMARY KEY,
-    name VARCHAR NOT NULL,
-    opening TIME NOT NULL,
-    closing TIME NOT NULL,
-    minimum_age INT NOT NULL CHECK (minimum_age > 0),
-    ticket_required_id INT NOT NULL,
-    CONSTRAINT chk_opening_closing CHECK (opening < closing),
-    CONSTRAINT fk_rollerCoasters_ticketType FOREIGN KEY (ticket_required_id) REFERENCES ticketTypes (id)
 );
 
 CREATE TABLE visitors_tickets (
