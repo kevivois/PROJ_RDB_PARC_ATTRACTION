@@ -9,6 +9,15 @@ CREATE TABLE ticketTypes (
     price DECIMAL NOT NULL CHECK (price > 0)
 );
 
+CREATE TABLE employees (
+    id SERIAL PRIMARY KEY,
+    role_id INT NOT NULL,
+    firstname VARCHAR NOT NULL,
+    lastname VARCHAR NOT NULL,
+    salary DECIMAL NOT NULL CHECK (salary > 0),
+    CONSTRAINT fk_employees_role FOREIGN KEY (role_id) REFERENCES roles (id)
+);
+
 CREATE TABLE rollerCoasters (
     id SERIAL PRIMARY KEY,
     name VARCHAR NOT NULL,
@@ -57,14 +66,6 @@ CREATE TABLE sales_visitors (
     CONSTRAINT fk_sales_visitors_visitor FOREIGN KEY (visitor_id) REFERENCES visitors (id)
 );
 
-CREATE TABLE employees (
-    id SERIAL PRIMARY KEY,
-    role_id INT NOT NULL,
-    firstname VARCHAR NOT NULL,
-    lastname VARCHAR NOT NULL,
-    salary DECIMAL NOT NULL CHECK (salary > 0),
-    CONSTRAINT fk_employees_role FOREIGN KEY (role_id) REFERENCES roles (id)
-);
 
 CREATE TABLE visitors_tickets (
     id SERIAL PRIMARY KEY,
