@@ -84,7 +84,7 @@ CREATE TABLE employee_shops (
     CONSTRAINT fk_employee_shops_shops FOREIGN KEY (shops_id) REFERENCES shops (id)
 );
 
-CREATE TABLE visitor_rollerCoaster (
+CREATE TABLE rollerCoaster_ticket (
     id SERIAL PRIMARY KEY,
     rollerCoaster_id INT NOT NULL,
     ticket_id INT NOT NULL,
