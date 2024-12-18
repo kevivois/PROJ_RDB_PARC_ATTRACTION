@@ -28,18 +28,13 @@ Dans notre projet, nous aurons naturellement des attractions qui forment la base
 
 Notre projet est totalement fictif même si de l'inspiration de parc d'attraction pour les éléments de nos tables n'est pas exclue. Néanmoins, nous n'aurons aucune donnée sur lesquelles se baser, elles seront totalement fictives.
 
-Questions intéressantes : 
-- Quelles attractions puis-je faire selon un age et un billet ?
-- Quelles est la moyenne des avis ?
-- Quelle est la meilleure attraction ?
-- Quelles employées ont travaillés à la fois dans un shop et dans une attractions.
-- Quelles visiteurs ont achetés aux moins 2 objets.
-- Quelle est le produit le plus vendu ?
-- Quelle employé a vendu un 'objet' à 'client' ?
+## Questions intéressantes : Voir queries.sql
 
-Voici de potentiels index intéressant :
-- Index lié à l'évaluation (rating)
-- 
+## Index
+
+- Sur les ventes et les dates auxquelles les ventes ont été effectuées.
+- Sur les ratings
+  
 
 Notre groupe est composé de :
 
