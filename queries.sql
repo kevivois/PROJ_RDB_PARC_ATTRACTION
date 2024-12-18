@@ -31,6 +31,11 @@ WHERE r.role LIKE 'Park Manager';
 
 --Quelles visiteurs ont achetés aux moins 2 objets.
 
+select visitors.id,visitors.firstname || ' ' || visitors.lastname as visitor,count(sales_visitors.id) from visitors
+inner join sales_visitors on sales_visitors.visitor_id = visitors.id
+group by visitors.id
+having count(sales_visitors.id) >= 2;
+
 
 --Combien de produits ont été acheté le 12 décembre ?
 SELECT COUNT(s.product_id) FROM sales_visitors AS s
@@ -39,7 +44,14 @@ HAVING s.date = '2024-12-01'
 ORDER BY COUNT(s.product_id) DESC;
 
 
---Quelle employé a vendu un 'objet' à 'client' ?
+--Quels clients ont acheté quels objects a quel employé et quand 
+
+select visitors.firstname || ' ' || visitors.lastname as visitor,employees.firstname || ' ' || employees.lastname as employee,products.product_name as product,products.quantity*products.price as "total price",sales_visitors.date as date from products
+inner join sales_visitors on sales_visitors.product_id = products.id
+inner join visitors on visitors.id = sales_visitors.visitor_id
+inner join employees on employees.id = sales_visitors.id
+
+
 
 
 
