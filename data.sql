@@ -212,6 +212,10 @@ INSERT INTO feedbacks (rollerCoaster_id, visitor_id, date, comment, rating) VALU
 (18, 18, '2024-12-18', 'Great for photos!', 5),
 (19, 19, '2024-12-19', 'A bit too short.', 3),
 (20, 20, '2024-12-20', 'Amazing coaster!', 5);
+(13, 1, '2024-12-13', 'Needs more twists!', 3),
+(13, 7, '2024-12-14', 'Too long !', 2),
+(13, 15, '2024-12-15', 'I broke my leg ! ', 2),
+(13, 16, '2024-12-16', 'Could be better !', 1);
 
 -- Insert data into employees_rollerCoasters
 INSERT INTO employees_rollerCoasters (date, rollerCoaster_id, employee_id) VALUES 
