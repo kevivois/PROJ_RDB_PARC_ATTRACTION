@@ -41,7 +41,8 @@ CREATE TABLE feedbacks (
 CREATE TABLE products (
     id SERIAL PRIMARY KEY,
     product_name VARCHAR NOT NULL,
-    price DECIMAL NOT NULL CHECK (price > 0)
+    price DECIMAL NOT NULL CHECK (price > 0),
+    quantity INT NOT NULL CHECK (quantity >= 0)
 );
 
 CREATE TABLE sales_visitors (
@@ -50,6 +51,8 @@ CREATE TABLE sales_visitors (
     quantity INT NOT NULL CHECK (quantity > 0),
     product_id INT NOT NULL,
     visitor_id INT NOT NULL,
+    employee_id INT NOT NULL,
+    CONSTRAINT fk_sales_visitors_employee FOREIGN KEY (employee_id) REFERENCES employees (id),
     CONSTRAINT fk_sales_visitors_product FOREIGN KEY (product_id) REFERENCES products (id),
     CONSTRAINT fk_sales_visitors_visitor FOREIGN KEY (visitor_id) REFERENCES visitors (id)
 );
