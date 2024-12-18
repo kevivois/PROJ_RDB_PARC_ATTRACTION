@@ -34,9 +34,10 @@ Notre projet est totalement fictif même si de l'inspiration de parc d'attractio
 ## Questions intéressantes : Voir queries.sql
 
 ## Index
-
-- Sur les ventes et les dates auxquelles les ventes ont été effectuées.
-- Sur les ratings
+Dans notre base de données aucun index ne serait nécessaires, car il y a trop peu de valeurs. Cependant, si on imagine qu'on a plus de valeurs alors on peut rajouter ceux-ci.
+- Sur sales_visitors et sa date, car on peut l'utiliser pour trouver toutes les vents qui ont été faites selon une dates spécifique.
+- Sur les feedbacks et les ratings, pour pouvoir trouver les mauvais commentaires.
+On aurait pleins d'autres possibilités selon les usages.
   
 
 Notre groupe est composé de :
