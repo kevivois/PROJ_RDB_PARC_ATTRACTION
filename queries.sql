@@ -94,7 +94,7 @@ FROM (
     ON vt.ticket_id = tt.id
 ) AS RevenueBreakdown;
 
--- Combien reste-il de produits ? 
+-- Combien reste-il de produits au total? 
 SELECT 
     (SELECT SUM(p.quantity) FROM products AS p) 
     - 
