@@ -73,7 +73,7 @@ SELECT DISTINCT COUNT(*) FROM sales_visitors AS sv
 WHERE sv.date = '2024-12-10');
 
 -- Combien de personnes se trouvaient quel jour dans le parc
-Select Count(visitors.id), visitors_tickets.date
+Select COUNT(visitors.id), visitors_tickets.date
 from visitors
 join visitors_tickets 
 on visitors.id = visitors_tickets.visitor_id
