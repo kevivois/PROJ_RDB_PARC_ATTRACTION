@@ -44,9 +44,7 @@ HAVING COUNT(sales_visitors.id) >= 2;
 -- Combien de produits ont été achetés le 12 décembre ?
 SELECT COUNT(s.product_id) 
 FROM sales_visitors AS s
-GROUP BY s.date
-HAVING s.date = '2024-12-12'
-ORDER BY COUNT(s.product_id) DESC;
+WHERE date = '2024-12-12';
 
 -- Quels clients ont acheté quels objets, à quel employé et quand ?
 SELECT visitors.firstname || ' ' || visitors.lastname AS client, 
