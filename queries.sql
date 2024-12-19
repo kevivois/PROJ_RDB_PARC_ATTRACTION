@@ -78,7 +78,7 @@ from visitors
 join visitors_tickets 
 on visitors.id = visitors_tickets.visitor_id
 group by visitors_tickets.date
-order by count(visitors.id) desc
+order by count(visitors.id) desc;
 
 -- Revenue total du park (sans payer les salaires) ?
 SELECT SUM(TotalRevenue) AS TotalRevenues
@@ -93,3 +93,10 @@ FROM (
     JOIN ticketTypes AS tt
     ON vt.ticket_id = tt.id
 ) AS RevenueBreakdown;
+
+-- Combien reste-il de produits ? 
+SELECT 
+    (SELECT SUM(p.quantity) FROM products AS p) 
+    - 
+    (SELECT SUM(sv.quantity) FROM sales_visitors AS sv) 
+AS RemainingProducts;
