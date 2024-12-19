@@ -6,7 +6,7 @@
 
 RollerCoasterWorld est un parc d'attractions qui propose une large gamme d'attractions. Non loin de ces dernières se trouve ShopWorld, un magasin où les visiteurs peuvent acheter divers produits et souvenirs. Différents types de billets sont disponibles à la vente, chacun permettant l'accès à plusieurs attractions du parc. Les employés du parc exercent leurs fonctions soit dans les attractions, soit dans le magasin, en fonction de leur affectation. Enfin, les visiteurs ont la possibilité de laisser des commentaires (feedbacks) sur les attractions qu'ils ont faites, contribuant ainsi à enrichir l'expérience pour tous.
 
-![Alt text](relative/path/to/RollerCoaster.png)
+![Image de la base de donnée](RollerCoaster.png)
 
 ## Métriques
 
