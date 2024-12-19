@@ -59,3 +59,17 @@ INNER JOIN visitors
 ON visitors.id = sales_visitors.visitor_id
 INNER JOIN employees 
 ON employees.id = sales_visitors.employee_id;
+
+
+-- Combien de personnes se trouvent dans le parc 14 décembre ?
+SELECT COUNT(*) AS TotalPerson FROM (  
+SELECT COUNT(*) AS CountValue FROM visitors_tickets AS vt
+WHERE vt.date = '2024-12-10'  
+UNION ALL   
+SELECT COUNT(*) FROM employees_rollercoasters AS er
+WHERE er.date = '2024-12-10'   
+UNION ALL
+SELECT DISTINCT COUNT(*) FROM sales_visitors AS sv
+WHERE sv.date = '2024-12-10');
+
+
